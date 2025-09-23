@@ -15,7 +15,7 @@ const Hero = () => {
         <path d="M0.589966 10.59L5.16997 6L0.589966 1.41L1.99997 0L7.99997 6L1.99997 12L0.589966 10.59Z" fill="white"/>
         </svg>
     return(<div className="hero  flex flex-col  container-layout ">
-        <div className="flex mt-70 flex-col gap-2 justify-center">
+        <div className="flex mt-55 xs:mt-70 flex-col gap-2 justify-center">
             <h1>FUTURE-READY GROWTH ADVISORY</h1>
             <p className="desc">Guided by a bold vision to empower businesses we turn challenges into opportunities and transform ambition into reality.</p>
             <div>
