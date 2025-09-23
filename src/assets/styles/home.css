@@ -1,0 +1,152 @@
+.home h2{
+    font-size: var(--font-size-xxl);
+    font-weight: 700;
+}
+.home p{
+    font-size: var(--font-size-xs);
+    font-weight: 500;
+}
+.hero{
+    height: 800px;
+    overflow: hidden;
+    background: url("../images/banner-with-dark.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev, .swiper-button-prev, .swiper-rtl .swiper-button-next{
+  display: none !important; 
+}
+.hero h1{
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    color: var(--light);
+    width: 50%;
+    line-height: 3.2rem;
+}
+.hero .desc{
+    font-size: var(--font-size-l);
+    font-weight: 500;
+    color: var(--main);
+    width: 50%;
+    line-height: 1.6rem;
+}
+.card-hero{
+    background-color: var(--light);
+    border-radius: 20px;
+}
+.arrow-hero{
+    cursor: pointer;
+}
+.arrow-hero.last{
+    transform: rotate(-180deg);
+}
+.card-hero h2{
+    font-size: var(--font-size-s) !important;
+    font-weight: 600 !important;
+}
+.card-hero p{
+    font-size: var(--font-size-xxs) !important;
+}
+
+/* Why Choose Us */
+.card-choose{
+    background-color: var(--dark);
+    color: var(--light);
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.card-choose h3,.card-industry h3{
+    font-size: var(--font-size-l);
+    font-weight: 600;
+}
+.card-choose p,.card-industry p{
+    font-size: var(--font-size-xxs);
+    font-weight: 400;
+}
+.num-choose{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.num-choose span{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: var(--font-size-l);
+    font-weight: 600;
+}
+/* Industries */
+.card-industry{
+    border-radius: 20px;
+    box-shadow: var(--shadow-box);
+    overflow: hidden;
+    height: 300px;  
+}
+.container-icon{
+    background-color: var(--main);
+}
+.arrow{
+    height: 35px;
+    width: 35px;
+    border-radius: 8px;
+    background-color: var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+    border: 2px solid var(--dark);
+}
+.arrow:hover{
+    border-color: var(--main);
+    background-color: var(--light);
+}
+.arrow:hover path{
+    fill: var(--main);
+}
+.arrow.last svg{
+    transform: rotate(-180deg);
+}
+.industry .swiper-button-next,.industry .swiper-rtl .swiper-button-prev,.industry .swiper-button-prev,.industry .swiper-rtl .swiper-button-next{
+  display: none !important;
+}
+
+
+@media (max-width: 1200px) {
+    .hero h1{
+        width: 80%;
+    }
+    .hero .desc{
+        width: 80%;
+    }
+    
+}
+@media (max-width: 768px) {
+    .hero h1{
+        font-size: var(--font-size-xxl);
+        line-height: 2.5rem;
+    }
+    .hero .desc{
+        line-height: 1.4rem;
+        font-size: var(--font-size-s);
+    }
+    .home h2{
+    font-size: 1.5rem;
+    }
+    .home p{
+        font-size: var(--font-size-xxs);
+    }
+    
+}
+@media (max-width: 500px) {
+    .hero h1{
+       width: 100%;
+    }
+    .hero .desc{
+        width: 100%;
+    }
+    
+}

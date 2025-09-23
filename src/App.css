@@ -1,0 +1,6 @@
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
+@import url("./assets/styles/layout.css");
+@import url("./assets/styles/home.css");
