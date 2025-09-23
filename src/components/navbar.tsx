@@ -26,6 +26,7 @@ const data: NavbarItem[] = [{
 
 const Navbar: React.FC = () => {
     const [ isScrolled, setIsScrolled ] = useState<boolean>(false)
+    const [ isOpenMenu, setIsOpenMenu ] = useState<boolean>(false)
     useEffect(()=>{
          const handleScroll = () => {
             if (window.scrollY > 10) {
@@ -46,7 +47,12 @@ const Navbar: React.FC = () => {
             { logo }
         </div>
         <div>
-            <ul className="flex gap-4">
+             <div onClick={()=>setIsOpenMenu(!isOpenMenu)} className={`container-menu-lines px-3 ${isOpenMenu?"close-icon-menu":""}`}>
+                    <div className="line-menu-1"></div>
+                    <div className="line-menu-2"></div>
+                    <div className="line-menu-3"></div>
+                </div>
+            <ul className={`flex gap-4 ${isOpenMenu ? "open" : ""}`}>
                 {data.map((e,idx)=><li key={`Menu_${e.name}_${idx}`}>
                     <NavLink to={e.link} >{e.name}</NavLink>
                 </li>)}

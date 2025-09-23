@@ -59,7 +59,7 @@ const Industries = ()=>{
                             <div className="container-icon flex justify-center p-4">
                                 {e.icon}
                             </div>
-                            <div className="p-4 flex justify-center items-center  flex-col text-center">
+                            <div className="p-4 flex justify-center items-center h-full flex-col text-center">
                                 <h3>{e.name}</h3>
                                 <p>{e.description}</p>
                             </div>
