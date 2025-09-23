@@ -1,7 +1,6 @@
 import { servicesData } from "../../../data/data"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
-import video from "../../../assets/videos/dubai.mov"
 
 const Hero = () => {
     const lastSlider = ()=>{
