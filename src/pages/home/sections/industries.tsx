@@ -1,6 +1,6 @@
 import { industriesData } from "../../../data/data"
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Navigation ,Autoplay } from 'swiper/modules';
 
 
 
@@ -30,7 +30,7 @@ const Industries = ()=>{
             </div>
             <Swiper
                 className="h-full"
-                modules={[Navigation]}
+                modules={[Navigation,Autoplay]}
                 navigation
                 autoplay={{
                     delay: 3000,       // Slide every 3 seconds
