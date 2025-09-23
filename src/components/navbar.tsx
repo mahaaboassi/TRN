@@ -53,7 +53,7 @@ const Navbar: React.FC = () => {
                     <div className="line-menu-3"></div>
                 </div>
             <ul className={`flex gap-4 ${isOpenMenu ? "open" : ""}`}>
-                {data.map((e,idx)=><li key={`Menu_${e.name}_${idx}`}>
+                {data.map((e,idx)=><li onClick={()=>setIsOpenMenu(false)} key={`Menu_${e.name}_${idx}`}>
                     <NavLink to={e.link} >{e.name}</NavLink>
                 </li>)}
             </ul>
