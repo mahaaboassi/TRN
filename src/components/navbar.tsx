@@ -20,7 +20,7 @@ const data: NavbarItem[] = [{
     link: "/industries"
 },{
     name: "Contact",
-    link: "/"
+    link: "/contact"
 }]
 
 const Navbar = () => {

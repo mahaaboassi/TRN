@@ -71,15 +71,7 @@ input,textarea{
 input::placeholder, textarea::placeholder{
   color: var(--grey_3);
 }
-form button{
-    background-color: var(--blue_4);
-    color: var(--light);
-    font-size: var(--font-size-xs);
-}
-form button:hover{
-    color: var(--blue_4);
-    background-color: var(--light);
-}
+
 .sr-only {
   position: absolute;
   width: 1px;

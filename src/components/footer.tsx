@@ -10,16 +10,16 @@ const data: NavbarItem[] = [{
     link: "/"
 },{
     name: "About",
-    link: "/"
+    link: "/about"
 },{
     name: "Services",
-    link: "/"
+    link: "/services"
 },{
     name: "Industries",
-    link: "/"
+    link: "/industries"
 },{
     name: "Contact",
-    link: "/"
+    link: "/contact"
 }]
 type IconItem = {
     name: string,
@@ -78,8 +78,7 @@ const Footer = () =>{
         <div className="flex flex-col gap-1 text-center items-center md:flex-row md:justify-between ">
             <p>© 2025, All Rights Reserved , Powered by Ariz Global</p>
             <div className="flex flex-col xs:flex-row xs:gap-4">
-                <div><Link to={"/"}>TERMS AND CONDITIONS</Link></div>
-                <div><Link to={"/"}>PRIVACY POLICY</Link></div>
+                <div><Link to={"/terms-and-conditions"}>TERMS AND CONDITIONS</Link></div>
             </div>
         </div>
     </footer>)

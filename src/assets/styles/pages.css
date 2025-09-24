@@ -42,6 +42,12 @@
 .separate-page .card-hero svg.retail path{
     stroke: var(--main);
 }
+/* Contact */
+.contact iframe{
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+}
 @media (max-width:768px) {
     .hero-separate{
         height: 400px;

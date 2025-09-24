@@ -73,10 +73,12 @@ button{
     padding: 10px;
     cursor: pointer;
     transition: 0.3s;
+    border: 2px solid var(--second);
 }
 button:hover{
     background: var(--light);
     color: var(--main);
+    border: 2px solid var(--main);
 }
 /* Footer */
 footer a{
@@ -139,10 +141,42 @@ footer a:hover{
   100% { clip-path: inset(0 0 0 0); }
 }
 
-
+/* Pop-up */
+.pop-up{
+    position: fixed;
+    top : 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.2);
+    background-color: var(--light);
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.629);
+    border-radius: 20px;
+    z-index: 1000;
+    animation: pop forwards 0.3s linear;
+}
+.pop-up button{
+    background-color: var(--second);
+    color: var(--light);
+    font-size: var(--font-size-xs);
+}
+.pop-up button:hover{
+    color: var(--blue_3);
+    background-color: var(--light); 
+}
+@keyframes pop {
+    from{
+        transform: translate(-50%,-50%) scale(0.2);
+    }to{
+         transform: translate(-50%,-50%) scale(1);
+    }
+}
 @media (max-width:768px){
     .container-layout{
         padding: 0 2rem;
+    }
+}
+@media (max-width:700px) {
+    .pop-up{
+        width: 500px;
     }
 }
 @media (max-width:600px){
@@ -187,4 +221,14 @@ footer a:hover{
     nav ul.open li:nth-child(5){
         animation-delay: 0.8s;
     } 
+}
+@media (max-width:510px) {
+    .pop-up{
+        width: 400px;
+    }
+}
+@media (max-width: 450px) {
+    .pop-up{
+        width:95%;   
+    }
 }
