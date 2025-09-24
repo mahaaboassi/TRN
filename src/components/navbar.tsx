@@ -1,4 +1,3 @@
-import type React from "react"
 import { logo } from "../data/data"
 import { NavLink } from "react-router-dom"
 import { useEffect, useState } from "react"
