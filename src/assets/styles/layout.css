@@ -16,6 +16,7 @@ nav{
 nav.scrolled{
     animation: changeColor 0.5s forwards linear
 }
+
 @keyframes changeColor {
     from{
 
@@ -147,6 +148,9 @@ footer a:hover{
 @media (max-width:600px){
     nav ul{
         display: none;
+    }
+    nav svg.logo{
+        width:80px
     }
     .container-menu-lines{
         display: flex;

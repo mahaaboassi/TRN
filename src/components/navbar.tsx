@@ -12,19 +12,19 @@ const data: NavbarItem[] = [{
     link: "/"
 },{
     name: "About",
-    link: "/"
+    link: "/about"
 },{
     name: "Services",
-    link: "/"
+    link: "/services"
 },{
     name: "Industries",
-    link: "/"
+    link: "/industries"
 },{
     name: "Contact",
     link: "/"
 }]
 
-const Navbar: React.FC = () => {
+const Navbar = () => {
     const [ isScrolled, setIsScrolled ] = useState<boolean>(false)
     const [ isOpenMenu, setIsOpenMenu ] = useState<boolean>(false)
     useEffect(()=>{
