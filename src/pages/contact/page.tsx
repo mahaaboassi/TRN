@@ -214,7 +214,7 @@ const Contact = ()=>{
                         </form>
                 </div>
                 <div className="home col-span-3 lg:col-span-1 ">
-                    <div className="flex flex-col justify-between  h-full">
+                    <div className="flex flex-col justify-between gap-2  h-full">
                         <div className="flex flex-col gap-5">
                             {
                                 contactData.map((e,idx)=>(<Link to={`${e.link}`} target="_blank"  key={`contact_Info_${e.title}_${idx}`}>
