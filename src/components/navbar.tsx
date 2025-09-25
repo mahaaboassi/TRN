@@ -1,5 +1,5 @@
 import { logo } from "../data/data"
-import { NavLink } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import { useEffect, useState } from "react"
 
 type NavbarItem = {
@@ -43,7 +43,7 @@ const Navbar = () => {
     },[])
     return(<nav className={`flex justify-between container-layout items-center ${isScrolled ? "scrolled" : ""}`}>
         <div>
-            { logo }
+            <Link to={"/"} >{ logo }</Link>
         </div>
         <div>
              <div onClick={()=>setIsOpenMenu(!isOpenMenu)} className={`container-menu-lines px-3 ${isOpenMenu?"close-icon-menu":""}`}>
@@ -53,7 +53,7 @@ const Navbar = () => {
                 </div>
             <ul className={`flex gap-4 ${isOpenMenu ? "open" : ""}`}>
                 {data.map((e,idx)=><li onClick={()=>setIsOpenMenu(false)} key={`Menu_${e.name}_${idx}`}>
-                    <NavLink to={e.link} >{e.name}</NavLink>
+                    <NavLink className={({isActive }:any)=> isActive ?"active":""} to={e.link} >{e.name}</NavLink>
                 </li>)} 
             </ul>
         </div>

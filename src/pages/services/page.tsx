@@ -1,8 +1,10 @@
+import { useEffect } from "react"
 import HeroSeparate from "../../components/heroSeprarte"
 import { servicesData } from "../../data/data"
 
 
 const Services = ()=>{
+    useEffect(()=>window.scrollTo({top:0}),[])
     return(<article>
         <title>Deliverd Services | TRN</title>
         <meta name="description" content={"Discover TRN’s delivered services – comprehensive business solutions covering establishment, strategy, finance, branding, automation, and market intelligence. We help organizations streamline operations, attract investment, boost customer value, and achieve sustainable growth in a data-driven economy."} />

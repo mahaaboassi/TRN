@@ -1,7 +1,9 @@
+import { useEffect } from "react"
 import HeroSeparate from "../../components/heroSeprarte"
 import { industriesData } from "../../data/data"
 
 const Industires = ()=>{
+    useEffect(()=>window.scrollTo({top:0}),[])
     return(<article>
         <title> Serviced Industries | TRN</title>
         <meta name="description" content={"Explore TRN’s serviced industries – from real estate, manufacturing, and technology to healthcare, education, retail, hospitality, and entertainment. We drive innovation, operational excellence, and sustainable growth through tailored strategies and market-driven transformation."} />

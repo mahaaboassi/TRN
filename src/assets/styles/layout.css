@@ -13,6 +13,15 @@ nav{
     text-transform: uppercase;
     z-index: 1000;
 }
+nav a{
+    transition: 0.3s;
+}
+nav a:hover{
+    color: var(--main);
+}
+nav a.active{
+    color: var(--main);
+}
 nav.scrolled{
     animation: changeColor 0.5s forwards linear
 }

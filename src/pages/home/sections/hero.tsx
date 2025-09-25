@@ -1,6 +1,7 @@
 import { servicesData } from "../../../data/data"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
+import { Link } from "react-router-dom";
 
 const Hero = () => {
     const lastSlider = ()=>{
@@ -19,7 +20,7 @@ const Hero = () => {
             <h1>FUTURE-READY GROWTH ADVISORY</h1>
             <p className="desc">Guided by a bold vision to empower businesses we turn challenges into opportunities and transform ambition into reality.</p>
             <div>
-                <button>Get Starting</button>
+                <Link to="/contact"><button>Get Starting</button></Link>
             </div>
         </div>
         

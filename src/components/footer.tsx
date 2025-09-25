@@ -76,7 +76,7 @@ const Footer = () =>{
             <div className="line"></div>
         </div>
         <div className="flex flex-col gap-1 text-center items-center md:flex-row md:justify-between ">
-            <p>© 2025, All Rights Reserved , Powered by Ariz Global</p>
+            <p>© 2025, All Rights Reserved , Powered by <Link target="_blank" to="https://arizglobal.com">Ariz Global</Link></p>
             <div className="flex flex-col xs:flex-row xs:gap-4">
                 <div><Link to={"/terms-and-conditions"}>TERMS AND CONDITIONS</Link></div>
             </div>

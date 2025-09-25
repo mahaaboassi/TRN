@@ -2,8 +2,11 @@ import HeroSeparate from "../../components/heroSeprarte"
 import { aboutData } from "../../data/data"
 // image
 import shape from "../../assets/images/shape.png"
+import { Link } from "react-router-dom"
+import { useEffect } from "react"
 
 const About = ()=>{
+    useEffect(()=>window.scrollTo({top:0}),[])
     return(<article>
         <title>About | TRN</title>
         <meta name="description" content={"Discover The Rangrez Network (TRN) – empowering businesses with tailored growth strategies, operational excellence, and innovative solutions. We help organizations navigate change, scale sustainably, and achieve lasting impact"} />
@@ -36,10 +39,10 @@ const About = ()=>{
             </div>
             })}
         </div>
-        <div   className=" container-layout home">
+        <div   className=" container-layout home flex flex-col gap-2">
             <h2>OUR APPROACH</h2>
             <p>We combine collaboration, innovation, and deep industry insights to deliver tailored, actionable strategies. By understanding your unique goals, we provide hands-on support from consultation to execution, driving efficiency, growth, and measurable results with your long-term success as our top priority.</p>
-            <button>Read More</button>
+            <Link to="/services" ><button>Read More</button></Link>
         </div>
 
     </div>

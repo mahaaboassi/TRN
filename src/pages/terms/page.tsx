@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import HeroSeparate from "../../components/heroSeprarte"
 
 type Item = {
@@ -17,18 +18,19 @@ const data: Item[] = [{
 
 
 const Terms = ()=>{
+    useEffect(()=>window.scrollTo({top:0}),[])
     return(<article>
         <title> Terms & Conditions | TRN</title>
-        <meta name="description" content={"ead TRN’s Terms & Conditions, Privacy Policy, and legal disclaimer. Learn about your rights, responsibilities, data protection, and limitations of liability when using our website and services."} />
+        <meta name="description" content={"Read TRN’s Terms & Conditions, Privacy Policy, and legal disclaimer. Learn about your rights, responsibilities, data protection, and limitations of liability when using our website and services."} />
         <meta name="keywords" content={"The Rangrez Network, TRN, terms and conditions, privacy policy, legal disclaimer, website terms, user agreement, intellectual property, liability disclaimer, data protection, cookies policy, website usage policy"} />
         <link rel="canonical" href={"/terms-and-conditions"} />
         {/*  Open Graph for Facebook, LinkedIn, etc.  */}
         <meta property="og:title" content={"Terms & Conditions | TRN"} />
         <meta property="og:url" content={"/terms-and-conditions"} />
-        <meta property="og:description" content={"ead TRN’s Terms & Conditions, Privacy Policy, and legal disclaimer. Learn about your rights, responsibilities, data protection, and limitations of liability when using our website and services."} />
+        <meta property="og:description" content={"Read TRN’s Terms & Conditions, Privacy Policy, and legal disclaimer. Learn about your rights, responsibilities, data protection, and limitations of liability when using our website and services."} />
         {/* Twitter  */}
         <meta name="twitter:title" content={"Terms & Conditions | TRN"} />
-        <meta property="twitter:description" content={"ead TRN’s Terms & Conditions, Privacy Policy, and legal disclaimer. Learn about your rights, responsibilities, data protection, and limitations of liability when using our website and services."} />
+        <meta property="twitter:description" content={"Read TRN’s Terms & Conditions, Privacy Policy, and legal disclaimer. Learn about your rights, responsibilities, data protection, and limitations of liability when using our website and services."} />
 
 
         <div className="separate-page flex flex-col gap-7 md:gap-10 lg:gap-20">
