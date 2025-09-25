@@ -67,9 +67,11 @@ const Footer = () =>{
                 </ul>
             </div>
             <div className="flex gap-1 items-center">
-                    {icons.map((e,idx)=><div className="icon-social" key={`Icon_${e.name}_${idx}`}>
-                        <Link target="_blank" to={e.link} >{e.icon}</Link>
-                    </div>)}
+                    {icons.map((e,idx)=><Link key={`Icon_${e.name}_${idx}`} target="_blank" to={e.link} >
+                    <div className="icon-social" >
+                        {e.icon}
+                    </div>
+                    </Link>)}
             </div>
         </div>
         <div className="px-10">
