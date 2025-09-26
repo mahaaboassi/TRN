@@ -41,8 +41,8 @@ const Navbar = () => {
             window.removeEventListener("scroll", handleScroll);
         };
     },[])
-    return(<nav className={`flex justify-between container-layout items-center ${isScrolled ? "scrolled" : ""}`}>
-        <div>
+    return(<nav className={`flex justify-between  container-layout items-center ${isScrolled ? "scrolled" : ""}`}>
+        <div className="pt-1 md:pt-3">
             <Link to={"/"} >{ logo }</Link>
         </div>
         <div>
